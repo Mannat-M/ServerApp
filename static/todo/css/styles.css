@@ -1,0 +1,117 @@
+/* Common and App styles */
+body {
+    font-family: "ptsans", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+    margin: 20px;
+	font-size: 30px;
+}
+
+a {
+    color: #065561;
+    border-radius: 3px;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+.btn {
+    margin: 10px right;
+    outline: #065561 solid 1px;
+    border-radius: 3px;
+    padding: 2px 2px 2px 2px;
+    color: #000000;
+    background-color: transparent;
+    box-shadow: 0 0 0 0;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+ul {
+   height: 100%;
+   padding: 80px 5px 0px 20px;
+}
+  
+ul li {
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #aacacf;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+input {
+    margin: 0;
+    border: 1px solid #6e878b;
+    border-radius: 1px;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+
+/* Set zebra-stripes: all odd list items to a different color */
+ul li:nth-child(odd) {
+	background: #038497;
+}
+ul li:hover {
+    background: #6e878b;
+}
+
+.form {
+    margin: auto;
+    align-self: center;
+}
+
+.form input, .form textarea {
+    border-radius: 5px;
+    border: 1px solid #065561;
+    outline: none;
+    background: none;
+    padding: 5px;
+    width: 100%;
+}
+
+/* The side navigation menu */
+.sidebar {
+    width: 90px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    margin-right: 200px;
+}
+
+/* Sidebar links */
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    width: 90px;
+    border-radius: 0px;
+}
+
+/* Active/current link */
+.sidebar a.active {
+    background-color: #065561;
+    color: white;
+}
+  
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+  
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+    min-width: 250px;
+    max-width: 50%;
+    margin-left: 320px;
+    height: 100%;
+}

@@ -1,0 +1,20 @@
+{% extends 'employee/login-base.html' %}
+
+{% block title %}
+    ServerApp
+{% endblock %}
+
+{% block content %}
+    <div class="login-page" id="login">
+        <div class="form" id="form">
+            <div>This connect lets you associate with the people in your company.</div>
+            <br>
+            <form class="login-form" method="POST">
+                {% csrf_token %}
+                <input type="text" id="username" name="username"placeholder="Username"/>
+                <input type="password" id="password" name="password" placeholder="Password"/>
+                <button id="submit">Login</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

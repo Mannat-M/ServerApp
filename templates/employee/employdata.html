@@ -1,0 +1,12 @@
+{% extends 'employee/base.html' %}
+
+{% block title %}
+    {{user.username}}'s Interface
+{% endblock %}
+
+{% block content %}
+    <div id="content" class="content">
+        <p> Hello, {{request.user}} </p>
+        <p>Welcome to ServerApp</p>
+    </div>
+{% endblock %}

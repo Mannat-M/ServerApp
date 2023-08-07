@@ -1,0 +1,36 @@
+/* App styles */
+.calendar {
+    table-layout: fixed;
+    height: 88%;
+    width: 98%;
+    margin: auto;
+    font-size: 15px;
+}
+
+.calendar tr, .calendar td {
+    border: 1px solid #065561;
+}
+
+.calendar th {
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.calendar td {
+    width: 100px;
+    height: 100px;
+    padding: 25px 0px 0px 5px;
+}
+
+.month {
+    font-size: 25px;
+}
+
+.date {
+    font-size: 16px;
+}
+
+a {
+    color: #065561;
+}
